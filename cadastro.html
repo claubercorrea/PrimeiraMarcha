@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      
+        <title>Cadastro </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+      
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <main class="cadastro_main" id="cadastro">
+      <form class="cadastro " onsubmit="return ValidarCadastro()">
+          <div class="modal-header border-0">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+
+  </div>
+ 
+      <div class="container_cadastro">
+      <div class="cadastro_titulo mt-5">
+        <img src="/img/Adobe Express - file 4.png" alt="logo" class="img_cadastro">
+        <div class="meu_titulo_cadastro   ">
+            <h1 class="fw-bold ">Primeira Marcha</h1>
+            <h3 >A sua jornada começa aqui.</h3>
+      
+        </div>  
+      </div>
+
+      <div class="nome_cadastro">
+        <h2 class="titulo_do_cadastro mt-5">CADASTRO</h2>
+      </div>
+            <div class="row mb-3 nome_cadastro mt-0 ">
+    <div class="col-sm-10 d-flex justify-content-center cadastro">
+      <input type="text" class="form-control  text-center  emCadatro" id="inputEmail3" placeholder=" Digite seu Nome completo" required>
+    </div>
+  </div>
+
+          <div class="row mb-3 nome_cadastro mt-0 requrid">
+    <div class="col-sm-10 d-flex justify-content-center cadastro">
+      <input type="email" class="form-control  text-center emCadatro " id="inputEmail3" placeholder=" Digite seu E-mail" required>
+    </div>
+  </div>
+    
+    <div class="row mb-3  cadastro">
+    <div class="col-sm-10 d-flex justify-content-center  email_cadastro ">
+      <input type="text" class="form-control text-center  emCadatro" id="inputEmail3" placeholder=" Digite seu Usuario" required>
+    </div>
+  
+      <div class="row mb-3 cadastro mt-3">
+    <div class="col-sm-10 d-flex justify-content-center  email_cadastro mb-3">
+      <input type="password" class="form-control  text-center   emCadatro" id="inputEmail3" placeholder="Digite sua Senha" required>
+    </div>
+   <div class="row mb-3 cadastro ">
+    <div class="col-sm-10 d-flex justify-content-center  email_cadastro mb-3">
+      <input type="password" class="form-control text-center  emCadatro " id="inputEmail3" placeholder="Comfirmar a seu senha" required>
+    </div>
+ 
+    
+    <div class="row mb-3  mt-4 cadastro_botao requrid" >
+    <div class="col-sm-10 offset-sm-2  botao_cadatro cadastro requrid">
+      
+        <button type="submit" class="btn btn-primary" >Confirma</button>
+        <div class="botao_confirmar_cadastro">
+        <a href="./login.html" target="_self" class="btn btn-danger botao_confirmar_cadastro ">voltar</a></div>
+        </div>
+
+        </div>
+       </form>
+    </main>
+     <script src="./js/Login/login.js"></script>
+    </body>
+</html>
