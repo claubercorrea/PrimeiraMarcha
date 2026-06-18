@@ -13,6 +13,7 @@ body{
   
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 
     display: flex;
     flex-direction:column;
@@ -131,7 +132,7 @@ main{
     display: flex;
     position:relative;
         margin-left: 66%;
-       margin-bottom: 23px;
+       margin-bottom: 39px;
 padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
@@ -1414,61 +1415,238 @@ top:27px;
 }
     /* ---------------------RESPONSIVIDADE------------------------ */
 
+/* celulares  com telas muito menores */
+@media (max-width:359px){
+/* ==================cabeçalho ==================*/
 
 
-/* Tablet (768px - 991px) */
-@media (max-width: 991px) {
+body{
+    margin: 40px 50px;
+    padding: 20px 10px 40px;
+        width: 100%;
+                margin-left: 0px;
+}
+
+ header .cabeca{
+          height: 55px;
+        width: 236px;
+ }
+ header .texto h1 {
+        font-size:  0.6em;
+
+ }
+
+  header .texto h3{
+     font-size:  0.6em;
+  }
+
+   header .texto{
+    margin-top: 8px;
+   }
+  header img{
+         width: 70px;
+        height: 56px;
+        margin-top: -25px;
+  }
+
+  main{
+    width: 100%;
+  }
+
+.container_footer{
+    margin: auto;
+}
+  /* ==================MENU================== */
+  .icone_menu{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+    position: fixed;
+  }
+ .conteudo_principal{
+    flex-direction: column;
+ }
+
+ /* botao login */
+ main .login{
+    display: flex;
+    position: relative;
+       margin-left: auto;
+    margin-right: auto;
+
+    
+ }
+
+ .login >  .log{
+ margin-left: auto;
+    margin-right: auto;
+        border-radius: 33px;
+    padding: 4px 20px;
+    width: 74px;
+    font-size: small;
+
+ }
+
+ /* cardes */
+
+ .meucard{
+           width: 17em;
+        height: 24em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center; 
+            margin-top: 2%;
+
+ }
+ .meucard .relatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    align-self: center;;
+    width: 359px;  
+    font-size: 0.6em;
+    margin-top: 2%;
+ }
+
+ .card-text {
+    font-size: x-small  ;
+
+ }
+
+ .formados, .depoimentos , .card-title {
+    font-size:small;
+ }
+.meu_card_assinar{
+    width: 14rem;
+}
+.conter{       
+     width: 18em;
+        /* display: flex; */
+        /* justify-content: center; */
+        margin: auto;
+        flex-direction: column-reverse;
+        /* flex-wrap: nowrap; */
+        align-items: center;
+}
+.lista_final, .item_final{
+    flex-direction: column;
+            gap: 3px;
+        display: flex;
+        flex-direction: column-reverse;
+}
+.lista_final{
+
+       gap: 3px;
+               font-size: 0.6rem;
+}
+        
+        
+.text-assinatura{
+    font-size: small;
+}
+
+.item_final {
+    font-size: x-small;
+}
+.autoria{
+    font-size: 0.5rem;
+
+      
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        white-space: nowrap;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+      
+}
+#ano-tual{
+    text-align: center;
+}
+
+.texto_propaganda h2 {
+    font-size:0.9em;
+}
+.texto_propaganda >  p{
+    font-size: 0.6em;
+}
+
+.mensa i {
+    display: flex;
+    font-size: 39px;
+   ;
+}
+.mensa
+ {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+     position: fixed;
+    right: 161px;
+    /* bottom: 47px;  */
+            bottom: 42%;
+    padding: 10px; 
+    background-color: white;
+    width: 35px;
+    height: 30px;
+     border-radius: 50%; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+     z-index: 1000; 
+ cursor: pointer; 
+     transition: transform 0.3s ease; 
+     margin-top: 18%;
+}
+.container_chat{
+    margin-top: 20%;
+}
+.container_footer{
+        width: 18em;
+    
+        
+    }
+}
+/* celulares com telas menores */
+@media (min-width:360px) and (max-width: 575px){
 
 }
 
-/* Mobile Grande (576px - 767px) */
-@media (max-width: 767px) {
+/* celulares grandes  */ 
+@media (min-width:576px) and (max-width:767px){
+
+}
+/* tablets */
+
+@media (min-width:768) and (max-width:991px){
+
+}
+ /* notbooks */
+@media (min-width:992px) and (max-width:1199){
 
 }
 
-/* Mobile Pequeno (até 575px) */
-@media (max-width: 575px) {
+/* desktops */
+
+@media (min-width:1200) and (max-width:1399px){
 
 }
 
+/* telas grandes */
 
-/* Mobile Muito Pequeno (até 360px) */
-@media (max-width: 360px) {}
+@media (min-width: 1400px){
+
+} 
 
 
-/* Garante que os cards se ajustem corretamente */
-@media (max-width: 768px) {
+/* telas horizontais */
 
+@media (max-height:500px) and (orientation: landscape){
+    header { padding: 8px; }
 }
 
-/* ===== CORREÇÕES ESPECÍFICAS PARA MOBILE ===== */
-@media (max-width: 767px) {
-
-}
-
-/* ===== CORREÇÃO PARA TELAS MUITO PEQUENAS ===== */
-@media (max-width: 360px) {
-
-}
-
-/* ===== CORREÇÃO PARA LANDSCAPE MOBILE ===== */
-@media (max-height: 500px) and (orientation: landscape) {}
-
------------------------------------------------------------
-/* 1. ESTILO BASE (Mobile) */
-body { font-size: 16px; }
-
-/* 2. TABLETS (de 768px para cima) */
-@media (min-width: 768px) {
-  body { font-size: 18px; }
-}
-
-/* 3. DESKTOPS (de 992px para cima) */
-@media (min-width: 992px) {
-  body { font-size: 20px; }
-}
-
-/* 4. TELAS GRANDES (de 1200px para cima) */
-@media (min-width: 1200px) {
-  .container { max-width: 1140px; margin: auto; }
+@media (max-height:600px) and (orientation: landscape){
+    header { padding: 8px; }
 }
