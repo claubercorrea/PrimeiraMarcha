@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,10 @@ body{
     margin:0;
   
     padding: 0;
-    width: 100%;
+    min-width: 100vw;
+
+
+        min-height: 100vh;
     overflow-x: hidden;
 
     display: flex;
@@ -60,13 +64,13 @@ header h1, h3{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    /* align-items: center;
-    margin-top:4%;
-    text-align: center; */
+
 }
 header h1,h3{
     display: flex;
 }
+
+
 img{
     
         width: 257px;
@@ -123,11 +127,6 @@ img{
     text-align: center;
 }
 
-main{
-   
-    width: 100vh;
-    /* height: 100%; */
-}
 .login{
     display: flex;
     position:relative;
@@ -149,34 +148,19 @@ padding: 10px 20px;
     width: 120px ;
     margin-left: auto;
     flex-direction:row-reverse;
-        margin-top: 15%;
-            margin-bottom: -2%;
+           margin-bottom: -6%;
+    position: static;
+      margin-bottom: -6%;
+    position: static;
+    margin-right: -113px;
 }
 
- /* main .navbarNav{ 
-    text-align: center;
-} */
+
 .nav-link{
  padding: auto;
 }
 main .principal{
-        /* width: 100%;
-        max-width: 900px;
-        background: rgba(230, 230, 230, 0.5);   
-        backdrop-filter: blur(5px);
-        border-radius: 50px;
-        padding: 0px 30px;
-        margin:20px auto;
-        display: flex;
-        justify-content: center;
-        gap:30px;
-        border: 1px solid  rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-    height: 60px;
-        margin-top: -23%; */
-
-           /* width: 105%; */
-    /* max-width: 900px; */
+    width: 105%;
     background: rgba(230, 230, 230, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 50px;
@@ -201,7 +185,6 @@ main .navbar li a:hover{
     flex-direction: column;
     
     background: rgba(255, 255, 255, 0.8);
-    /* justify-content: center; */
     align-items: center;
     align-self: center;
     width: 600px;
@@ -219,7 +202,6 @@ main .navbar li a:hover{
        width: 77%;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 1%;
 }
 .meucard .galeria_fotos img{
     display: flex;
@@ -228,11 +210,7 @@ main .navbar li a:hover{
     align-items: center;
     align-self: center;
     text-align: center;
-
-
     color:black;
-
-    
 }
 
 .meucard{
@@ -240,9 +218,7 @@ main .navbar li a:hover{
     justify-content: center;
     align-items: center;
     align-self: center;
-    align-content: center;
-    
-    
+    align-content: center;   
 }
 .relatos{
     color:black;
@@ -526,11 +502,7 @@ margin-top: 0;
   padding-left: 35px;
 } */
  .user{
-       /* position: absolute;
-    top: 64%;
-    transform: translateY(-50%);
-    left: 116px;
-    font-size: 13pt; */
+
      position: absolute;
     top: 306px;
     transform: translateY(-50%);
@@ -566,12 +538,8 @@ margin-top: 0;
     align-items: center;
     align-self: center;
     margin-left: auto;
-    margin-right: auto;
-
-    
+    margin-right: auto;   
 }
-
-
 
 .nome_cadastro .email_cadastro{
     margin-top: 25px;
@@ -621,15 +589,7 @@ display: flex;
 
 }
 
-/* 
-    display: flex;
-    flex-direction: column;
-    margin-top: -11px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 50px;
-    border: 1px solid black;
-    width: 564px;
-    height: 748px; */
+
 .cadastro_titulo {
     display: flex;
     flex-direction: column;
@@ -1258,9 +1218,6 @@ padding: 0px;
 padding: 0px; 
 text-align:center;
 }
-
-
-
 /* -------------------------------------------------CATEGORIAS--------------------------------------- */
 
 
@@ -1279,8 +1236,6 @@ text-align:center;
     margin-right: auto;
     border: 1px solid black;
     top: -34px;
-      
-
     }
 
     .container_footer_categoria {
@@ -1290,10 +1245,9 @@ text-align:center;
     color: black;
     justify-content: center;
     width: 100%;
-        height: 74px;
+    height: 74px;
     margin-top: auto;
-    /* height: 7.3vh; */
-top:27px;
+    top:27px;
 }
 .li_texto{
     text-align: center;
@@ -1303,7 +1257,6 @@ top:27px;
     color: rgba(0, 0, 255, 1);
     width: 250px;
     cursor:pointer;
-
 }
 
 .titulo_categoria .li_texto:hover{
@@ -1311,7 +1264,6 @@ top:27px;
 
     transform: scale(1.02); /* Dá um leve "pulo" para frente */
     transition: 0.3s; /* Deixa o movimento suave */
-
 } 
 .titulo_categoria   h1{
     text-align: center;
@@ -1369,7 +1321,6 @@ top:27px;
     transition: all 0.3s ease;
     width: 100%;
     height: 60px;
-    
 }
 .container_assinaturas{
     margin-top: 10%;
@@ -1387,13 +1338,12 @@ top:27px;
 
 .modal-header{
     border:  none;
-       border-bottom:none;
+    border-bottom:none;
 }
 .modal-content{
     background: none;
     border:none;
-   border-bottom:none;
-
+    border-bottom:none;
     border-color: none;
 
 }
@@ -1419,95 +1369,104 @@ top:27px;
 @media (max-width:359px){
 /* ==================cabeçalho ==================*/
 
-
-body{
-    margin: 40px 50px;
-    padding: 20px 10px 40px;
-        width: 100%;
-                margin-left: 0px;
+    body{
+        max-width: auto;
+    }
+main{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
  header .cabeca{
-          /* height: 55px;
-        width: 236px; */
+        
 
-                height: 4em;
-                width: 20.9em;
-                        margin-left: 4%;
+    height: 4em;
+    width: 15.9em;
+    margin-left: 4%;
  }
  header .texto h1 {
-        font-size:  0.9em;
-          margin-top: -1%;
-
+    font-size:  0.9em;
+    margin-top: -1%;
  }
 
   header .texto h3{
-     font-size:  0.8em;
- margin-top: 3%;
+    font-size:  0.8em;
+    margin-top: 3%;
   }
 
    header .texto{
     margin-top: 8px;
    }
   header img{
-         width: 70px;
-        height: 56px;
-    
-                width: 83px;
-        height: 62px;
-        margin-top: -21px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 70px;
+    height: 56px;
+    width: 83px;
+    height: 62px;
+    margin-top: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   main{
     width: 100%;
-    margin-left: 10%;
-  }
+      }
 
 .container_footer{
     margin: auto;
+    
 }
   /* ==================MENU================== */
 
  .conteudo_principal{
     flex-direction: column;
+            padding: 0 16px;
  }
 
  /* botao login */
  main .login{
-    display: flex;
-    position: relative;
-       margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 
     
  }
 
  .login >  .log{
- margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
-        border-radius: 33px;
+    border-radius: 33px;
     padding: 4px 20px;
     width: 74px;
     font-size: small;
+    margin-left: auto;
 
+    margin-right: auto;
  }
+.log
+{
+    margin-left: auto;
 
-
+    margin-right: auto;
+}
 
   .cor_menu{
-               background: rgba(230, 230, 230, 0.5);
-        backdrop-filter: blur(5px);
-        border-radius: 50px;
-        justify-content: center;
-        gap: 30px;
-        border: 1px solid rgba(0, 0, 0, 54.1);
-        transition: all 0.3s ease;
-        margin-top: -13%;
+    background: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 54.1);
+    transition: all 0.3s ease;
+    margin-top: -13%;
     }
 
+    .navbar-collapse{
+    background: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+
+    }
   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     display: flex;
     flex-wrap: inherit;
@@ -1523,8 +1482,8 @@ body{
 strong:hover{
     font-size:calc(1em);
     background:white;
-   text-decoration: underline;
-   transition:ease-in 0.03;
+    text-decoration: underline;
+    transition:ease-in 0.03;
 }
 
 .navbar-nav{
@@ -1534,13 +1493,13 @@ strong:hover{
  /* cardes */
 
  .meucard{
-           width: 17em;
-        height: 24em;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center; 
-            margin-top: 2%;
+    width: 17em;
+    height: 24em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+    margin-top: 2%;
 
  }
  .meucard .relatos {
@@ -1552,10 +1511,12 @@ strong:hover{
     font-size: 0.6em;
     margin-top: 2%;
  }
+.link_final{
+font-size: 0.8rem;
+ }
 
  .card-text {
     font-size: x-small  ;
-
  }
 
  .formados, .depoimentos , .card-title {
@@ -1565,24 +1526,25 @@ strong:hover{
     width: 14rem;
 }
 .conter{       
-     width: 18em;
-        /* display: flex; */
-        /* justify-content: center; */
-        margin: auto;
-        flex-direction: column-reverse;
-        /* flex-wrap: nowrap; */
-        align-items: center;
+    width:288px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 .lista_final, .item_final{
     flex-direction: column;
-            gap: 3px;
-        display: flex;
-        flex-direction: column-reverse;
+    gap: 3px;
+    display: flex;
+        
 }
-.lista_final{
+  .lista_final{
 
-       gap: 3px;
-               font-size: 0.6rem;
+    gap: 3px;
+    font-size: 0.6rem;
 }
         
         
@@ -1591,20 +1553,18 @@ strong:hover{
 }
 
 .item_final {
-    font-size: x-small;
+           font-size: 0.8rem;
+}
+.item_final .link_fina  {
+    font-size: 0.6rem;
 }
 .autoria{
-    font-size: 0.5rem;
-
-      
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        white-space: nowrap;
-        /* justify-content: center; */
-        /* align-items: center; */
-
-      
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
 }
 #ano-tual{
     text-align: center;
@@ -1620,40 +1580,37 @@ strong:hover{
 .mensa i {
     display: flex;
     font-size: 39px;
-   ;
 }
 .mensa
  {
     display: flex; 
     justify-content: center;
     align-items: center;
-     position: fixed;
-    right: 1px;
-    /* bottom: 47px;  */
-            bottom: 42%;
+    position: fixed;
+    right: 55px;
+    bottom: 42%;
     padding: 10px; 
     background-color: white;
     width: 35px;
     height: 30px;
-     border-radius: 50%; 
+    border-radius: 50%; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-     z-index: 1000; 
- cursor: pointer; 
-     transition: transform 0.3s ease; 
-     margin-top: 18%;
+    z-index: 1000; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    margin-top: 18%;
 }
 .container_chat{
     margin-top: 20%;
 }
 .container_footer{
-        width: 18em;
-    
-        
+           width: 250px;
+        margin-left: 30px;
+                width: 302px;
     }
+  
 
     main .principal{
-            /* width: 105%; */
-    /* max-width: 900px; */
     background: rgba(230, 230, 230, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 50px;
@@ -1661,96 +1618,294 @@ strong:hover{
     gap: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
-    display:inline;
+    display:contents;
     margin-top: -13%;
         
     }
+    .meu{
+        margin-left: none;
+    }
+.card-glass img {
+    max-width: 100px; /* Ajuste para o tamanho que você achar ideal */
+    height: auto;
+    border-radius: 50%; /* Se quiser que a foto do aluno fique redonda, por exemplo */
+    display: block;
+    margin: 0 auto 10px auto; /* Centraliza a foto e dá um respiro embaixo */
 }
+
+/* ================================ Pagina login ================================  */
+}
+
 /* celulares com telas menores */
 @media (min-width:360px) and (max-width: 575px){
 
 
-    /*============================ pagina Index============================ */
-    /* configuracao global */
-    body{
-        width: 100vh;
+/* ========================global ======================== */
+body{
+        max-width: auto;
     }
-    main{
-            margin-left: 20%;
-    }
-    .conteudo_principal{
-        display: flex;
-        flex-direction: column;
-    }
-/* menu */
-
-  .navbar>.container-fluid{
-    justify-content: center;
-
-  }
-  main .principal{
-    display:inline;
-  }
-
-  /* cabeçalho */
-
-  header  .cabeca{
-        left: 26px;
-        width: 829px;     }
-  .texto h1, .texto h3 {
-    margin-top: 4%;
+main{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 16px;
 }
-.text{
+
+ header .cabeca{
+        
+
+    height: 4em;
+    width: 15.9em;
+    margin-left: 4%;
+ }
+ header .texto h1 {
+    font-size:  0.9em;
     margin-top: -1%;
-}    
-.meu{
-        margin: auto;
-        width: 21em;
-        text-align: center;
-}
-/* login */
-.login{
-    margin-left: auto;
-}
-.log{
-        margin-right: auto;
-}
-/* cards */
-.meucard{
-    margin-top: 2%;
-}
-.conter {
-    width: 85%;
-    margin: auto;
-}
-/* rodape */
+ }
 
-.lista_final{
+  header .texto h3{
+    font-size:  0.8em;
+    margin-top: 3%;
+  }
+
+   header .texto{
+    margin-top: 8px;
+   }
+  header img{
+    width: 70px;
+    height: 56px;
+    width: 83px;
+    height: 62px;
+    margin-top: -21px;
     display: flex;
-    flex-direction:row;
+    justify-content: center;
     align-items: center;
-    align-self: center;
-    text-align: center;
-}
-.final_roda{
-    text-align: center;
-}
+  }
+
+  main{
+    width: 100%;
+      }
 
 .container_footer{
-    width: 125%;
-    justify-content: flex-start;    
-    margin-left: 25%;
-    border-radius: 9px;
-} 
-.item_final{
-    padding: 0;
-    gap: 0;
-    justify-self: flex-end;
-    align-items: center;
-    font-weight: bolder;
-    padding-bottom: 4px;
-    font-size: 1rem;
+    margin: auto;
+    
 }
+  /* ==================MENU================== */
+
+ .conteudo_principal{
+    flex-direction: column;
+            padding: 0 16px;
+ }
+
+ /* botao login */
+ main .login{
+    margin-left: auto;
+    margin-right: auto;
+
+    
+ }
+
+ .login >  .log{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 33px;
+    padding: 4px 20px;
+    width: 74px;
+    font-size: small;
+    margin-left: auto;
+
+    margin-right: auto;
+ }
+.log
+{
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+  .cor_menu{
+    background: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 54.1);
+    transition: all 0.3s ease;
+    margin-top: -13%;
+    }
+
+    .navbar-collapse{
+    background: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+
+    }
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+ strong {
+    font-weight: bolder;
+    font-size: x-small;
+}
+
+strong:hover{
+    font-size:calc(1em);
+    background:white;
+    text-decoration: underline;
+    transition:ease-in 0.03;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+ /* cardes */
+
+ .meucard{
+    width: 17em;
+    height: 24em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+    margin-top: 2%;
+
+ }
+ .meucard .relatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    align-self: center;;
+    width: 359px;  
+    font-size: 0.6em;
+    margin-top: 2%;
+ }
+.link_final{
+font-size: 0.8rem;
+ }
+
+ .card-text {
+    font-size: x-small  ;
+ }
+
+ .formados, .depoimentos , .card-title {
+    font-size:small;
+ }
+.meu_card_assinar{
+    width: 14rem;
+}
+.conter{       
+    width:288px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.lista_final, .item_final{
+    flex-direction: column;
+    gap: 3px;
+    display: flex;
+        
+}
+  .lista_final{
+
+    gap: 3px;
+    font-size: 0.6rem;
+}
+        
+        
+.text-assinatura{
+    font-size: small;
+}
+
+.item_final {
+           font-size: 0.8rem;
+}
+.item_final .link_fina  {
+    font-size: 0.6rem;
+}
+.autoria{
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
+}
+#ano-tual{
+    text-align: center;
+}
+
+.texto_propaganda h2 {
+    font-size:0.9em;
+}
+.texto_propaganda >  p{
+    font-size: 0.6em;
+}
+
+.mensa i {
+    display: flex;
+    font-size: 39px;
+}
+.mensa
+ {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 55px;
+    bottom: 42%;
+    padding: 10px; 
+    background-color: white;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    margin-top: 18%;
+}
+.container_chat{
+    margin-top: 20%;
+}
+.container_footer{
+    width: 250px;
+    margin-left: 30px;
+    width: 302px;
+    margin: auto;
+    }
+  
+
+    main .principal{
+    background: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    display:contents;
+    margin-top: -13%;
+        
+    }
+    .meu{
+        margin-left: none;
+    }
+.card-glass img {
+    max-width: 100px; /* Ajuste para o tamanho que você achar ideal */
+    height: auto;
+    border-radius: 50%; /* Se quiser que a foto do aluno fique redonda, por exemplo */
+    display: block;
+    margin: 0 auto 10px auto; /* Centraliza a foto e dá um respiro embaixo */
+}   
+
 }
 
 /* celulares grandes  */ 
